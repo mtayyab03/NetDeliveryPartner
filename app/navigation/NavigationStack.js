@@ -17,6 +17,12 @@ import PaymentsScreen from "../screens/PaymentsScreen";
 import CardScreen from "../screens/CardScreen";
 import EarningsScreen from "../screens/EarningsScreen";
 import MessageScreen from "../screens/MessageScreen";
+import CurrentWeekScreen from "../screens/CurrentWeekScreen";
+import McNewOrderscreen from "../screens/McNewOrderscreen";
+import OrderPreparedScreen from "../screens/OrderPreparedScreen";
+import PickUpOrderScreen from "../screens/PickUpOrderScreen";
+import DeliverOrderScreen from "../screens/DeliverOrderScreen";
+import AccountEditScreen from "../screens/AccountEditScreen";
 
 const Stack = createStackNavigator();
 
@@ -24,7 +30,7 @@ export default function NavigationStack() {
   return (
     <Stack.Navigator
       screenOptions={{ headerMode: "false" }}
-      initialRouteName="SplashScreen"
+      initialRouteName="OrderPreparedScreen"
     >
       <Stack.Screen name="SplashScreen" component={SplashScreen} />
       <Stack.Screen name="LoginScreen" component={LoginScreen} />
@@ -39,6 +45,15 @@ export default function NavigationStack() {
       <Stack.Screen name="CardScreen" component={CardScreen} />
       <Stack.Screen name="EarningsScreen" component={EarningsScreen} />
       <Stack.Screen name="MessageScreen" component={MessageScreen} />
+      <Stack.Screen name="CurrentWeekScreen" component={CurrentWeekScreen} />
+      <Stack.Screen name="McNewOrderscreen" component={McNewOrderscreen} />
+      <Stack.Screen
+        name="OrderPreparedScreen"
+        component={OrderPreparedScreen}
+      />
+      <Stack.Screen name="PickUpOrderScreen" component={PickUpOrderScreen} />
+      <Stack.Screen name="DeliverOrderScreen" component={DeliverOrderScreen} />
+      <Stack.Screen name="AccountEditScreen" component={AccountEditScreen} />
     </Stack.Navigator>
   );
 }

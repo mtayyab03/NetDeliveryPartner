@@ -10,7 +10,6 @@ import {
   ScrollView
 } from "react-native";
 import { RFPercentage } from "react-native-responsive-fontsize";
-import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 
 //Components
 import Screen from "../components/Screen";
@@ -92,7 +91,7 @@ export default function HomeScreen(props) {
           }}
         >
           Welcome to your 
-          Partner ordering system with NetDelivery
+          NetDelivery Partner system 
         </Text> 
        </View>
        </View>

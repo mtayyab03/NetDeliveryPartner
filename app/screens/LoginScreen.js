@@ -113,12 +113,12 @@ export default function LoginScreen(props) {
       >
         <Text
           style={{
-            color: Colors.primary,
+            color: Colors.red,
             fontFamily: FontFamily.regular,
             fontSize: RFPercentage(2.5),
           }}
         >
-          Forget Password
+          Forgot your password
         </Text>
       </TouchableOpacity>
 
@@ -134,7 +134,7 @@ export default function LoginScreen(props) {
             fontSize: RFPercentage(2.5),
           }}
         >
-          Become a Resturant Partner
+          Become a Driver partner
         </Text>
       </TouchableOpacity>
 

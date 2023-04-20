@@ -10,7 +10,6 @@ import {
   ScrollView,
 } from "react-native";
 import { RFPercentage } from "react-native-responsive-fontsize";
-import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 
 //Components
 import Screen from "../components/Screen";
@@ -190,12 +189,12 @@ export default function SignUpScreen(props) {
           >
             ID/Passport
           </Text>
-          <View style={styles.buttonmain}>
+          <TouchableOpacity activeOpacity={0.7}style={styles.buttonmain}>
             <Text style={styles.buttontext}>+ Upload file</Text>
-          </View>
+          </TouchableOpacity>
         </View>
 
-        {/* company reg */}
+        {/* Drivers license */}
         <View style={{ marginTop: RFPercentage(6) }} />
         <View
           style={{ width: "90%", flexDirection: "row", alignItems: "center" }}
@@ -208,11 +207,31 @@ export default function SignUpScreen(props) {
               fontFamily: FontFamily.medium,
             }}
           >
-            Company Reg
+            Drivers license
           </Text>
-          <View style={styles.buttonmain}>
+          <TouchableOpacity activeOpacity={0.7} style={styles.buttonmain}>
             <Text style={styles.buttontext}>+ Upload file</Text>
-          </View>
+          </TouchableOpacity>
+        </View>
+
+        {/* work permit*/}
+        <View style={{ marginTop: RFPercentage(6) }} />
+        <View
+          style={{ width: "90%", flexDirection: "row", alignItems: "center" }}
+        >
+          <Text
+            style={{
+              fontWeight: "400",
+              fontSize: RFPercentage(2.5),
+              color: Colors.blacky,
+              fontFamily: FontFamily.medium,
+            }}
+          >
+            Work Permit
+          </Text>
+          <TouchableOpacity activeOpacity={0.7} style={styles.buttonmain}>
+            <Text style={styles.buttontext}>+ Upload file</Text>
+          </TouchableOpacity>
         </View>
 
         {/* signup button */}

@@ -22,7 +22,7 @@ import Colors from "../config/Colors";
 import { FontFamily } from "../config/font";
 
 
-export default function NewOrderScreen(props) {
+export default function CurrentWeekScreen(props) {
   return (
     <Screen style={styles.screen}>
 
@@ -79,7 +79,7 @@ export default function NewOrderScreen(props) {
                 fontFamily: FontFamily.regular,
               }}
             >
-              Today Earnings
+              Current Week
             </Text>
           </View>
 
@@ -102,7 +102,7 @@ export default function NewOrderScreen(props) {
                 fontFamily: FontFamily.regular,
               }}
             >
-              R 90.76
+              R 390.76
             </Text>
           </View>
           {/* text */}
@@ -120,7 +120,7 @@ export default function NewOrderScreen(props) {
                 fontFamily: FontFamily.regular,
               }}
             >
-              1 completed deliveries
+              5 completed deliveries
             </Text>
           </View>
           <View style={{ marginTop: RFPercentage(2) }} />
@@ -149,7 +149,7 @@ export default function NewOrderScreen(props) {
           </View>
 
           <TouchableOpacity activeOpacity={0.7} onPress={() => {
-                props.navigation.navigate("CurrentWeekScreen")}}
+                props.navigation.navigate("McNewOrderscreen")}}
             style={{
               marginTop:RFPercentage(3),
               justifyContent: "center",

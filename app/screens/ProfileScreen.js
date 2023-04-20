@@ -27,10 +27,13 @@ export default function ProfileScreen(props) {
       <View style={{ marginTop: RFPercentage(4) }} />
       <ProfileMain
         imageSource={require("../../assets/images/profilepic.png")}
-        title="Cafe Corner"
+        title="Trot Mabuso"
         subtitle="Edit Profile"
         onpress={() => {
           props.navigation.navigate("EditProfileScreen");
+        }}
+        onpressPic={() => {
+          props.navigation.navigate("AccountEditScreen");
         }}
       />
 
@@ -52,17 +55,17 @@ export default function ProfileScreen(props) {
         }}
       />
       <LogoTitle
-        imageSource={require("../../assets/images/orderhistorylogo.png")}
-        title="Order History"
-        onpress={() => {
-          props.navigation.navigate("OrderHistory");
-        }}
-      />
-      <LogoTitle
         imageSource={require("../../assets/images/earninglogo.png")}
         title="Earnings"
         onpress={() => {
           props.navigation.navigate("EarningsScreen");
+        }}
+      />
+      <LogoTitle
+        imageSource={require("../../assets/images/deliveryhisicon.png")}
+        title="Delivery History"
+        onpress={() => {
+          props.navigation.navigate("OrderHistory");
         }}
       />
       <LogoTitle

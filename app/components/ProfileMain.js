@@ -22,7 +22,13 @@ import StatusShow from "../components/StatusShow";
 import Colors from "../config/Colors";
 import { FontFamily } from "../config/font";
 
-export default function ProfileMain({ imageSource, title, subtitle, onpress }) {
+export default function ProfileMain({
+  imageSource,
+  title,
+  subtitle,
+  onpress,
+  onpressPic,
+}) {
   return (
     <View
       style={{
@@ -31,16 +37,18 @@ export default function ProfileMain({ imageSource, title, subtitle, onpress }) {
         alignItems: "center",
       }}
     >
-      <Image
-        style={{
-          width: RFPercentage(9),
-          height: RFPercentage(9),
-          borderRadius: RFPercentage(5),
-        }}
-        source={imageSource}
-      />
+      <TouchableOpacity activeOpacity={0.7} onPress={onpressPic}>
+        <Image
+          style={{
+            width: RFPercentage(9),
+            height: RFPercentage(9),
+            borderRadius: RFPercentage(5),
+          }}
+          source={imageSource}
+        />
+      </TouchableOpacity>
 
-      <View style={{ marginLeft: RFPercentage(2) }}>
+      <View style={{ marginLeft: RFPercentage(3) }}>
         <Text
           style={{
             fontSize: RFPercentage(2.2),

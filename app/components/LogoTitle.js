@@ -35,7 +35,7 @@ export default function LogoTitle({ imageSource, title, onpress }) {
         source={imageSource}
       />
 
-      <View style={{ marginLeft: RFPercentage(2) }} />
+      <View style={{ marginLeft: RFPercentage(4) }} />
       <TouchableOpacity activeOpacity={0.7} onPress={onpress}>
         <Text
           style={{

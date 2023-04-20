@@ -25,28 +25,18 @@ export default function EditProfileScreen(props) {
   const editDetailList = [
     {
       id: 1,
-      title: "Cafe Corner",
-      subtitle: "Business name",
+      title: "Trot",
+      subtitle: "First name",
     },
     {
       id: 2,
-      title: "Trot Mabuso",
-      subtitle: "Owners name",
+      title: "Mabuso",
+      subtitle: "Last name",
     },
     {
       id: 3,
-      title: "2012/07686/07",
-      subtitle: "Registration number",
-    },
-    {
-      id: 4,
       title: "0674055339",
       subtitle: "Phone numbers",
-    },
-    {
-      id: 5,
-      title: "cafecorner@gmail.com",
-      subtitle: "Email address",
     },
   ];
   return (
@@ -161,164 +151,7 @@ export default function EditProfileScreen(props) {
           </View>
         ))}
 
-        {/* Set Hours */}
-        <View style={{ marginTop: RFPercentage(5) }} />
-        <View
-          style={{
-            width: "90%",
-            justifyContent: "center",
-          }}
-        >
-          <Text
-            style={{
-              fontSize: RFPercentage(2.3),
-              color: Colors.blacky,
-              fontFamily: FontFamily.regular,
-            }}
-          >
-            Set Hours
-          </Text>
-        </View>
-
-        {/* week start end times */}
-        <View
-          style={{
-            width: "85%",
-            alignItems: "center",
-            justifyContent: "center",
-            marginTop: RFPercentage(3),
-          }}
-        >
-          <TouchableOpacity
-            activeOpacity={0.7}
-            style={{ position: "absolute", left: 0 }}
-          >
-            <Text
-              style={{
-                fontSize: RFPercentage(2.3),
-                color: Colors.blacky,
-                fontFamily: FontFamily.regular,
-              }}
-            >
-              Week days
-            </Text>
-          </TouchableOpacity>
-          <Text
-            style={{
-              fontSize: RFPercentage(2.3),
-              color: Colors.blacky,
-              fontFamily: FontFamily.regular,
-            }}
-          >
-            Start time
-          </Text>
-          <TouchableOpacity
-            activeOpacity={0.7}
-            style={{ position: "absolute", right: RFPercentage(2) }}
-          >
-            <Text
-              style={{
-                fontSize: RFPercentage(2.3),
-                color: Colors.blacky,
-                fontFamily: FontFamily.regular,
-              }}
-            >
-              End time
-            </Text>
-          </TouchableOpacity>
-        </View>
-
-        {/* date card */}
-        <View
-          style={{
-            width: "90%",
-            marginTop: RFPercentage(2),
-            alignItems: "center",
-            justifyContent: "center",
-            backgroundColor: Colors.lightWhite,
-            borderRadius: RFPercentage(1),
-            padding: RFPercentage(2),
-          }}
-        >
-          <View
-            style={{
-              width: "95%",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <TouchableOpacity
-              activeOpacity={0.7}
-              style={{ position: "absolute", left: 0 }}
-            >
-              <Text
-                style={{
-                  fontSize: RFPercentage(2.3),
-                  color: Colors.blacky,
-                  fontFamily: FontFamily.regular,
-                }}
-              >
-                Mon
-              </Text>
-            </TouchableOpacity>
-            <Text
-              style={{
-                fontSize: RFPercentage(2.3),
-                color: Colors.blacky,
-                fontFamily: FontFamily.regular,
-              }}
-            >
-              09:30 am
-            </Text>
-            <TouchableOpacity
-              activeOpacity={0.7}
-              style={{ position: "absolute", right: 0 }}
-            >
-              <Text
-                style={{
-                  fontSize: RFPercentage(2.3),
-                  color: Colors.blacky,
-                  fontFamily: FontFamily.regular,
-                }}
-              >
-                18:30 pm
-              </Text>
-            </TouchableOpacity>
-          </View>
-        </View>
-
-        {/*2nd date card */}
-        <DateCard
-          weekday="Tue"
-          addlogo={require("../../assets/images/addlogo.png")}
-        />
-        {/*2nd date card */}
-        <DateCard
-          weekday="Wed"
-          addlogo={require("../../assets/images/addlogo.png")}
-        />
-        {/*2nd date card */}
-        <DateCard
-          weekday="Thu"
-          addlogo={require("../../assets/images/addlogo.png")}
-        />
-        {/*2nd date card */}
-        <DateCard
-          weekday="Fri"
-          addlogo={require("../../assets/images/addlogo.png")}
-        />
-        {/*2nd date card */}
-        <DateCard
-          weekday="Sat"
-          addlogo={require("../../assets/images/addlogo.png")}
-        />
-        {/*2nd date card */}
-        <DateCard
-          weekday="Sun"
-          addlogo={require("../../assets/images/addlogo.png")}
-        />
-
-        {/* signup button */}
+        {/* delete account button */}
         <TouchableOpacity style={styles.loginbutton} activeOpacity={0.7}>
           <AppButton title="Delete Account" buttonColor={Colors.red} />
         </TouchableOpacity>
